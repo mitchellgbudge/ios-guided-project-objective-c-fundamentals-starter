@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EC90EA52371E49A00107BA6 /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC90EA42371E49A00107BA6 /* LSIPerson.m */; };
 		BD9AA4DF2371D53400E8D4EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9AA4DE2371D53400E8D4EF /* AppDelegate.m */; };
 		BD9AA4E22371D53400E8D4EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9AA4E12371D53400E8D4EF /* SceneDelegate.m */; };
 		BD9AA4EA2371D53500E8D4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9AA4E92371D53500E8D4EF /* Assets.xcassets */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6EC90EA32371E49A00107BA6 /* LSIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
+		6EC90EA42371E49A00107BA6 /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
 		BD9AA4DA2371D53400E8D4EF /* StarWarsSearch-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StarWarsSearch-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9AA4DD2371D53400E8D4EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD9AA4DE2371D53400E8D4EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +77,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EC90E9E2371E42000107BA6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BD9AA5042371D55900E8D4EF /* Main.storyboard */,
+				BD9AA4EB2371D53500E8D4EF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6EC90E9F2371E42D00107BA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD9AA4E92371D53500E8D4EF /* Assets.xcassets */,
+				BD9AA4DD2371D53400E8D4EF /* AppDelegate.h */,
+				BD9AA4DE2371D53400E8D4EF /* AppDelegate.m */,
+				BD9AA4E02371D53400E8D4EF /* SceneDelegate.h */,
+				BD9AA4E12371D53400E8D4EF /* SceneDelegate.m */,
+				BD9AA4EF2371D53500E8D4EF /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6EC90EA02371E43500107BA6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BD9AA50F2371D87700E8D4EF /* LSILog.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6EC90EA12371E46300107BA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD9AA5092371D64500E8D4EF /* LSIPersonTableViewCell.h */,
+				BD9AA50A2371D64500E8D4EF /* LSIPersonTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6EC90EA22371E46B00107BA6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD9AA5062371D58300E8D4EF /* LSIPersonSearchTableViewController.h */,
+				BD9AA5072371D58300E8D4EF /* LSIPersonSearchTableViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6EC90EA62371E49E00107BA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6EC90EA32371E49A00107BA6 /* LSIPerson.h */,
+				6EC90EA42371E49A00107BA6 /* LSIPerson.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BD9AA4D12371D53400E8D4EF = {
 			isa = PBXGroup;
 			children = (
@@ -95,21 +155,13 @@
 		BD9AA4DC2371D53400E8D4EF /* StarWarsSearch-Objc */ = {
 			isa = PBXGroup;
 			children = (
-				BD9AA4DD2371D53400E8D4EF /* AppDelegate.h */,
-				BD9AA4DE2371D53400E8D4EF /* AppDelegate.m */,
-				BD9AA4E02371D53400E8D4EF /* SceneDelegate.h */,
-				BD9AA4E12371D53400E8D4EF /* SceneDelegate.m */,
-				BD9AA5042371D55900E8D4EF /* Main.storyboard */,
-				BD9AA5062371D58300E8D4EF /* LSIPersonSearchTableViewController.h */,
-				BD9AA5072371D58300E8D4EF /* LSIPersonSearchTableViewController.m */,
-				BD9AA5092371D64500E8D4EF /* LSIPersonTableViewCell.h */,
-				BD9AA50A2371D64500E8D4EF /* LSIPersonTableViewCell.m */,
-				BD9AA50F2371D87700E8D4EF /* LSILog.h */,
-				BD9AA50C2371D74900E8D4EF /* Person Search TableView */,
-				BD9AA4E92371D53500E8D4EF /* Assets.xcassets */,
-				BD9AA4EB2371D53500E8D4EF /* LaunchScreen.storyboard */,
+				6EC90EA62371E49E00107BA6 /* Model */,
+				6EC90E9E2371E42000107BA6 /* Storyboards */,
+				6EC90EA22371E46B00107BA6 /* View Controllers */,
+				6EC90EA12371E46300107BA6 /* Views */,
+				6EC90EA02371E43500107BA6 /* Helpers */,
+				6EC90E9F2371E42D00107BA6 /* Resources */,
 				BD9AA4EE2371D53500E8D4EF /* Info.plist */,
-				BD9AA4EF2371D53500E8D4EF /* main.m */,
 			);
 			path = "StarWarsSearch-Objc";
 			sourceTree = "<group>";
@@ -125,13 +177,6 @@
 				BD9AA4FB2371D53600E8D4EF /* Info.plist */,
 			);
 			path = "StarWarsSearch-ObjcTests";
-			sourceTree = "<group>";
-		};
-		BD9AA50C2371D74900E8D4EF /* Person Search TableView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Person Search TableView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9AA4DF2371D53400E8D4EF /* AppDelegate.m in Sources */,
+				6EC90EA52371E49A00107BA6 /* LSIPerson.m in Sources */,
 				BD9AA5082371D58300E8D4EF /* LSIPersonSearchTableViewController.m in Sources */,
 				BD9AA50B2371D64500E8D4EF /* LSIPersonTableViewCell.m in Sources */,
 				BD9AA4F02371D53500E8D4EF /* main.m in Sources */,

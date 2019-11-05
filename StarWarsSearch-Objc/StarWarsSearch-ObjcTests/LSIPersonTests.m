@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "LSIFileHelper.h"
+#import "LSIPerson.h"
 
 @interface LSIPersonTests : XCTestCase
 
@@ -28,6 +29,13 @@
     }
     
     NSLog(@"PERSON: %@", json);
+    
+    LSIPerson *luke = [[LSIPerson alloc] initWithDictionary:json];
+    
+    XCTAssertEqualObjects(@"Luke Skywalker", luke.name);
+    XCTAssertEqualObjects(@"19BBY", luke.birthYear);
+    XCTAssertEqualObjects(@"172", luke.height);
+    XCTAssertEqualObjects(@"blue", luke.eyeColor);
 }
 
 @end

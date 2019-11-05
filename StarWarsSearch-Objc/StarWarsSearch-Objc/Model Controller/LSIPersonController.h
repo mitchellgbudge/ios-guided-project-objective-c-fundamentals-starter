@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface LSIPersonController : NSObject
+
+- (void)searchForPeopleWithSearchTerm:(NSString *)searchTerm
+                           completion:(void (^)(NSArray *people, NSError *error))completion;
 
 @end
 
-NS_ASSUME_NONNULL_END

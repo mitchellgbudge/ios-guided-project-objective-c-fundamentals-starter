@@ -7,8 +7,21 @@
 //
 
 #import "LSIPersonTableViewCell.h"
+#import "LSIPerson.h"
 
 @implementation LSIPersonTableViewCell
 
+- (void)setPerson:(LSIPerson *)person {
+    _person = person;
+    [self updateViews];
+}
+
+- (void) updateViews {
+    if (!self.person) { return; }
+    self.nameLabel.text = self.person.name;
+    self.birthYearLabel.text = self.person.birthYear;
+    self.heightLabel.text = [NSString stringWithFormat:@"%@ cm", self.person.height];
+    self.eyeColorLabel.text = [NSString stringWithFormat:@"Eye color: %@", self.person.eyeColor];
+}
 
 @end

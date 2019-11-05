@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6EC90EA52371E49A00107BA6 /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC90EA42371E49A00107BA6 /* LSIPerson.m */; };
+		6EC90EA92371F28700107BA6 /* LSIPersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC90EA82371F28700107BA6 /* LSIPersonController.m */; };
 		BD9AA4DF2371D53400E8D4EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9AA4DE2371D53400E8D4EF /* AppDelegate.m */; };
 		BD9AA4E22371D53400E8D4EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9AA4E12371D53400E8D4EF /* SceneDelegate.m */; };
 		BD9AA4EA2371D53500E8D4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9AA4E92371D53500E8D4EF /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		6EC90EA32371E49A00107BA6 /* LSIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
 		6EC90EA42371E49A00107BA6 /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
+		6EC90EA72371F28700107BA6 /* LSIPersonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPersonController.h; sourceTree = "<group>"; };
+		6EC90EA82371F28700107BA6 /* LSIPersonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPersonController.m; sourceTree = "<group>"; };
 		BD9AA4DA2371D53400E8D4EF /* StarWarsSearch-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StarWarsSearch-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9AA4DD2371D53400E8D4EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD9AA4DE2371D53400E8D4EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,6 +137,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6EC90EAA2371F28A00107BA6 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EC90EA72371F28700107BA6 /* LSIPersonController.h */,
+				6EC90EA82371F28700107BA6 /* LSIPersonController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		BD9AA4D12371D53400E8D4EF = {
 			isa = PBXGroup;
 			children = (
@@ -156,9 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				6EC90EA62371E49E00107BA6 /* Model */,
-				6EC90E9E2371E42000107BA6 /* Storyboards */,
-				6EC90EA22371E46B00107BA6 /* View Controllers */,
+				6EC90EAA2371F28A00107BA6 /* Model Controller */,
 				6EC90EA12371E46300107BA6 /* Views */,
+				6EC90EA22371E46B00107BA6 /* View Controllers */,
+				6EC90E9E2371E42000107BA6 /* Storyboards */,
 				6EC90EA02371E43500107BA6 /* Helpers */,
 				6EC90E9F2371E42D00107BA6 /* Resources */,
 				BD9AA4EE2371D53500E8D4EF /* Info.plist */,
@@ -283,6 +296,7 @@
 			files = (
 				BD9AA4DF2371D53400E8D4EF /* AppDelegate.m in Sources */,
 				6EC90EA52371E49A00107BA6 /* LSIPerson.m in Sources */,
+				6EC90EA92371F28700107BA6 /* LSIPersonController.m in Sources */,
 				BD9AA5082371D58300E8D4EF /* LSIPersonSearchTableViewController.m in Sources */,
 				BD9AA50B2371D64500E8D4EF /* LSIPersonTableViewCell.m in Sources */,
 				BD9AA4F02371D53500E8D4EF /* main.m in Sources */,

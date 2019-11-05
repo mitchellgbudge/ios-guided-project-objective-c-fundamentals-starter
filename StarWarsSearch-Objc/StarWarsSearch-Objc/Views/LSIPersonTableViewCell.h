@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LSIPerson;
 
 @interface LSIPersonTableViewCell : UITableViewCell
 
@@ -14,7 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *birthYearLabel;
 @property (weak, nonatomic) IBOutlet UILabel *heightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *eyeColorLabel;
+@property LSIPerson *person;
 
-// TODO: Create a person property and updateViews method
+- (void) updateViews;
 
 @end
